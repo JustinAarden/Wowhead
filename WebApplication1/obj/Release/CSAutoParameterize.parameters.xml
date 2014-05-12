@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WowheadDB-Web.config Connection String" description="WowheadDB Connection String used in web.config by the application to access the database." defaultValue="Database=wowhead;Server=127.0.0.1;Port=3306;UID=web;PWD=okmnbvcx1@;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\justi_000\\Dropbox\\HBO\\C\#\\Wowhead\\WebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WowheadDB']/@connectionString" />
+  </parameter>
+</parameters>

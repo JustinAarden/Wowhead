@@ -1,0 +1,7 @@
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Release\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Release\Database.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Release\Entities.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Release\Entities.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Release\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Release\Database.pdb

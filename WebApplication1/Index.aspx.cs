@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using BusinessLayer;
+
+
+namespace Wowhead
+{
+    public partial class WebForm1 : System.Web.UI.Page
+     
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+        protected void btSearch_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                BusinessLayer.Item item = new BusinessLayer.Item();
+                //txtSearch.Text = item.GetItemById(Convert.ToInt32(txtSearch.Text)).Name + " , " + item.GetItemById(Convert.ToInt32(txtSearch.Text)).Level;
+                txtSearch.Text = item.GetItemByName(txtSearch.Text).Level + " , " + item.GetItemByName(txtSearch.Text).Name;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }        
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+}

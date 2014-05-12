@@ -1,0 +1,5 @@
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Database.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\Database.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache

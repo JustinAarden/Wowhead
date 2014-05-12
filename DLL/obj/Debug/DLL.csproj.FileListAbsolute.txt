@@ -1,0 +1,4 @@
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\DLL\bin\Debug\DLL.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\DLL\bin\Debug\DLL.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\DLL\obj\Debug\DLL.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\DLL\obj\Debug\DLL.pdb

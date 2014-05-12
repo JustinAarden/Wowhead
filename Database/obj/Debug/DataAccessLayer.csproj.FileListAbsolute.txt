@@ -1,0 +1,8 @@
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Database.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Entities.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\mysql.data.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\bin\Debug\Entities.pdb
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\Database.dll
+C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\Database\obj\Debug\Database.pdb
