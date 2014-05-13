@@ -8,21 +8,20 @@ using Entities;
 
 namespace BusinessLayer
 {
-     public class Item
+     public class BLItem
     {
 
          public Entities.Item GetItemById(int id)
          {
-             DataAccessLayer.ItemFactory itemFactory = new DataAccessLayer.ItemFactory();
+             DataAccessLayer.DalItem itemFactory = new DataAccessLayer.DalItem();
              return itemFactory.GetItemById(id);
          }
 
          public Entities.Item GetItemByName(string name)
          {
-             DataAccessLayer.ItemFactory itemFactory = new DataAccessLayer.ItemFactory();
+             DataAccessLayer.DalItem itemFactory = new DataAccessLayer.DalItem();
              return itemFactory.GetItemByName(name);
           }
          
-
     }
 }

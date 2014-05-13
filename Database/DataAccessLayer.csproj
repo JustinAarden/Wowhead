@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALGuide.cs" />
     <Compile Include="DBConnect.cs" />
-    <Compile Include="ItemFactory.cs" />
+    <Compile Include="DALItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

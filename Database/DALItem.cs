@@ -1,48 +1,42 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 using Entities;
-using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLayer
 {
-
-    public class ItemFactory
+    public class DalItem
     {
         public Item GetItemById(int id)
         {
             Item item = null;
-            using (Database db = new Database())
+            using (var db = new Database())
             {
                 db.OpenConnection();
 
-                db.CreateCommand("SELECT * FROM Item WHERE Item_ID = " + id.ToString());
+                db.CreateCommand("SELECT * FROM Item WHERE Item_ID = " + id);
                 MySqlDataReader dr = db.Command.ExecuteReader();
                 while (dr.Read())
                 {
                     item = new Item();
                     item.Name = dr["name"].ToString();
                     item.Level = dr["level"].ToString();
-
                 }
             }
 
             return item;
         }
+
         /// <summary>
-        /// This method will search for the item by
-        /// name. It will work with the full name
-        /// or just a keyword
+        ///     This method will search for the item by
+        ///     name. It will work with the full name
+        ///     or just a keyword
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
         public Item GetItemByName(string name)
         {
             Item item = null;
-            using (Database db = new Database())
+            using (var db = new Database())
             {
                 db.OpenConnection();
                 db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
@@ -54,7 +48,6 @@ namespace DataAccessLayer
                     item = new Item();
                     item.Name = dr["name"].ToString();
                     item.Level = dr["level"].ToString();
-
                 }
             }
 
@@ -64,13 +57,13 @@ namespace DataAccessLayer
         public Item ItemGridview(string name)
         {
             Item item = null;
-            using (Database db = new Database())
+            using (var db = new Database())
             {
                 db.OpenConnection();
 
                 db.CreateCommand("SELECT * FROM Item");
-                DataTable datatableitems = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter();
+                var datatableitems = new DataTable();
+                var da = new MySqlDataAdapter();
                 da.Fill(datatableitems);
             }
 

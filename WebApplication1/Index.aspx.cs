@@ -18,7 +18,7 @@ namespace Wowhead
         }
         protected void btSearch_Click(object sender, EventArgs e)
         {
-            BusinessLayer.Item item = new BusinessLayer.Item();
+            BusinessLayer.BLItem item = new BusinessLayer.BLItem();
             if (!string.IsNullOrEmpty(txtSearch.Text))
             {
                 int EnteredIntValue = 0;

@@ -39,8 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guides.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="BlGuides.cs" />
+    <Compile Include="BlItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ using DataAccessLayer;
 
 namespace BusinessLayer
 {
-    public class Guides
+    public class BLGuides
     {
         Database Database;
 

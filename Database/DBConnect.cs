@@ -1,37 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Data.Odbc;
-
-
+using System.Diagnostics;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLayer
 {
     /// <summary>
-    /// Class used for the database interaction in the application.
+    ///     Class used for the database interaction in the application.
     /// </summary>
     public class Database : IDisposable
     {
-
         public Database()
         {
-            Connection = new MySqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["WowheadDB"].ConnectionString);
+            Connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["WowheadDB"].ConnectionString);
         }
 
         public MySqlConnection Connection { get; private set; }
         public MySqlCommand Command { get; private set; }
 
+        public void Dispose()
+        {
+            CloseConnection();
+        }
+
 
         /// <summary>
-        /// Opens the database connection.
+        ///     Opens the database connection.
         /// </summary>
         public void OpenConnection()
         {
@@ -42,7 +37,7 @@ namespace DataAccessLayer
         }
 
         /// <summary>
-        /// Closes the database connection.
+        ///     Closes the database connection.
         /// </summary>
         public void CloseConnection()
         {
@@ -53,47 +48,33 @@ namespace DataAccessLayer
         }
 
         /// <summary>
-        /// Creates an command and binds it to the connection.
+        ///     Creates an command and binds it to the connection.
         /// </summary>
-        /// <param name="commandText"></param>
         public void CreateCommand(string commandText)
         {
-            System.Diagnostics.Debug.WriteLine(commandText);
+            Debug.WriteLine(commandText);
 
             Command = Connection.CreateCommand();
             Command.CommandText = commandText;
         }
 
         /// <summary>
-        /// Binds a parameter to the command with the given value.
+        ///     Binds a parameter to the command with the given value.
         /// </summary>
-        /// <param name="parameterName"></param>
-        /// <param name="value"></param>
         public void AddParameter(string parameterName, object value)
         {
             AddParameter(parameterName, value, default(MySqlDbType));
         }
 
         /// <summary>
-        /// Binds a parameter to the command with the given value and type.
+        ///     Binds a parameter to the command with the given value and type.
         /// </summary>
-        /// <param name="parameterName"></param>
-        /// <param name="value"></param>
-        /// <param name="type"></param>
         public void AddParameter(string parameterName, object value, MySqlDbType type)
         {
-            MySqlParameter parameter = new MySqlParameter();
+            var parameter = new MySqlParameter();
             parameter.ParameterName = parameterName;
             parameter.Value = value;
-            // Fix later
-            //parameter.OracleDbType = type;
-
             Command.Parameters.Add(parameter);
-        }
-
-        public void Dispose()
-        {
-            CloseConnection();
         }
     }
 }
