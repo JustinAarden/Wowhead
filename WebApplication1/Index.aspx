@@ -45,14 +45,14 @@
                     <div class="inner">
                         <h3 class="masthead-brand">WOWHEAD</h3>
                         <ul class="nav masthead-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="Index.aspx">Home</a></li>
                             <li><a href="Guides.aspx">Guides</a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="Items.aspx">Items</a></li>
-                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Classes</a></li>
                                 </ul>
                             </li>
 
@@ -70,11 +70,10 @@
                     </p>
                     <p class="lead">
                         <form runat="server">
-                        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search"></asp:TextBox>
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
                         <br />
                         <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
-                            <asp:Button ID="btDatabase" runat="server" CssClass="btn btn-default btn-lg dropdown-toggle" Text="Database" />
-                        
+                                                    
                          </p>
                         </form>
                 </div>

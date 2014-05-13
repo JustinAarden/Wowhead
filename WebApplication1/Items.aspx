@@ -61,11 +61,11 @@
                         <form runat="server">
                     <p class="lead">
 
-                        <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataSourceID="Wowheadmysql" ForeColor="White" Height="300px" Width="800px">
+                        <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="5" CellSpacing="3" DataSourceID="Wowheadmysql" ForeColor="White" Height="300px" Width="744px" AllowCustomPaging="True" AllowPaging="True">
                             <Columns>
                                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                                <asp:BoundField DataField="Level" HeaderText="Level" SortExpression="Level" />
-                                <asp:BoundField DataField="Reqlevel" HeaderText="Reqlevel" SortExpression="Reqlevel" />
+                                <asp:BoundField DataField="Level" HeaderText="Equipment Level" SortExpression="Level" />
+                                <asp:BoundField DataField="Reqlevel" HeaderText="Requirement level" SortExpression="Reqlevel" />
                                 <asp:BoundField DataField="Omschrijving" HeaderText="Omschrijving" SortExpression="Omschrijving" />
                                 <asp:BoundField DataField="Expr1" HeaderText="Quality" SortExpression="Expr1" />
                             </Columns>

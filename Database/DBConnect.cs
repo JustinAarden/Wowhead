@@ -8,7 +8,6 @@ using MySql.Data.MySqlClient;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 using System.Data.Odbc;
 

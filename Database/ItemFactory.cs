@@ -20,11 +20,7 @@ namespace DataAccessLayer
                 db.OpenConnection();
 
                 db.CreateCommand("SELECT * FROM Item WHERE Item_ID = " + id.ToString());
-                //db.AddParameter("itemid", id);
-
                 MySqlDataReader dr = db.Command.ExecuteReader();
-
-                //MySqlDataReader dr = db.DataReader;
                 while (dr.Read())
                 {
                     item = new Item();
@@ -36,16 +32,19 @@ namespace DataAccessLayer
 
             return item;
         }
-
+        /// <summary>
+        /// This method will search for the item by
+        /// name. It will work with the full name
+        /// or just a keyword
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Item GetItemByName(string name)
         {
             Item item = null;
             using (Database db = new Database())
             {
                 db.OpenConnection();
-
-                //db.CreateCommand("SELECT * FROM Item WHERE Name = @name");
-                //db.AddParameter("@name", name);
                 db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
                 db.AddParameter("@name", "%" + name + "%"); // Part of the string
                 MySqlDataReader dr = db.Command.ExecuteReader();
