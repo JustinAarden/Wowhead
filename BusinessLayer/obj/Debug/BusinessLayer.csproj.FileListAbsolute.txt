@@ -18,3 +18,13 @@ C:\Users\justi_000\Desktop\Wowhead\BusinessLayer\bin\Debug\Entities.pdb
 C:\Users\justi_000\Desktop\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\justi_000\Desktop\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\justi_000\Desktop\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\Database.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\Entities.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\MySql.Data.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\Database.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Debug\Entities.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Debug\BusinessLayer.pdb

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="782b5c06-0ddf-47a4-83f3-399ef02a4f8d"
+  name="MySqlClient"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d71345cb-06d0-4475-b433-9c3738048462"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMySql.Data.MySqlClient"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="fc9c5972-3c78-4474-83a9-53505edfff65"
+        name="MySqlDbType"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="185938dd-6081-4737-a31c-c33b552681dd"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjusti_000%2FDocuments%2FGitHub%2FWowhead%2Fmysql.data.dll Namespace%3DMySql.Data.MySqlClient Type%3DMySqlDbType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c92c993c-1782-4001-96b8-a4aa2e27c030"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25e3a5a8-ef18-4400-bee9-9fb9642c49d4">
+                <propertyInstance
+                  Id="3b628029-f387-4170-aef9-ca0dd078f607"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa9683f0-e705-464d-9fe5-5d63eb9b345f">
+                <propertyInstance
+                  Id="7db99dfb-e4aa-4188-a95d-c24b4d247270"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbf58c58-f5f9-4721-8746-f6a12a1cebac">
+                <propertyInstance
+                  Id="118bad8f-77ee-4aa5-ab0c-e7e9bee1d281"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97f4471c-f931-471e-8005-1fb38d2e9f0d"
+        name="MySqlConnection"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3e87e65e-f2e8-4cee-ad9c-2f7c990d1181"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjusti_000%2FDocuments%2FGitHub%2FWowhead%2Fmysql.data.dll Namespace%3DMySql.Data.MySqlClient Type%3DMySqlConnection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1938cca4-633e-47be-9499-8589be37b735"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d52193cb-c2b8-4e2f-b51a-a53b870585a8">
+                <propertyInstance
+                  Id="fa8ff6c8-4680-42c4-b73c-ae3b0393ded1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0c73bf4-1f08-45f4-a090-fd1f9a4aa697">
+                <propertyInstance
+                  Id="07688b9e-9e21-443d-897c-5b143dd7cf9e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2b61b93-b8c7-44dc-975b-3400f11d1306">
+                <propertyInstance
+                  Id="cad29d74-5e77-4bd1-be18-dfe23d88bf76"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0160cab-cd69-4021-b8ee-7986c5797513">
+                <propertyInstance
+                  Id="76488c3d-cde7-47a2-a515-ddde37a5f693"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a24e872e-65a1-4311-bc2c-7510cd926c3d">
+                <propertyInstance
+                  Id="215878b5-b222-48a7-832c-ae6bf685febf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a7e6d0a5-2773-4032-b208-e4f093dacc42"
+        name="MySqlCommand"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4bdc3f00-02d4-4f8f-bfc9-d271e69248ce"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjusti_000%2FDocuments%2FGitHub%2FWowhead%2Fmysql.data.dll Namespace%3DMySql.Data.MySqlClient Type%3DMySqlCommand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="89b532a5-a622-41a6-9737-a2c3280a093e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44220a74-9977-446d-ae0e-7342fefc189a">
+                <propertyInstance
+                  Id="b3341ffd-1641-493c-a055-b33efa17983f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="83b7af9a-324b-4bc5-b719-c47b6c464a60">
+                <propertyInstance
+                  Id="5502fa48-b2ab-4b57-afa2-b4ed2daae4d1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3d3dfbbc-f512-4632-a8e1-27e9265a5568">
+                <propertyInstance
+                  Id="4b9e32d9-3537-4db0-9525-295a2c0b7f20"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0dfb8cce-dcfb-493f-b92e-a7fe8bcc63d7">
+                <propertyInstance
+                  Id="644d0036-ac3b-4a2b-af0c-74904f7d78da"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0fcb8d79-5828-4820-b3f3-e1c871744031">
+                <propertyInstance
+                  Id="8dba2ad0-347e-446d-a28f-fa0c2275c77f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

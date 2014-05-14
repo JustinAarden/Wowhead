@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-05-14T15:03:24" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System' -  (Package)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::EventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web' -  (Package)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI' -  (Package)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::Page' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls' -  (Package)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls::Button' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls::GridView' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls::Label' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls::SqlDataSource' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::System::Web::UI::WebControls::TextBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead' -  (Package)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Medium" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1' -  (Class)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btDatabas2e' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btS2earch2' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btSearch' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btSearch_Click' -  (Operation)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btSearch_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::btSearch_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::GridView1' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::Label1' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::Page_Load' -  (Operation)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::Page_Load::e' -  (Parameter)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::Page_Load::sender' -  (Parameter)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::txtSe2arch2' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::txtSearch' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::WebForm1' -  (Operation)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'WowheadClassDiagram::Wowhead::WebForm1::Wowheadmysql' -  (Property)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: WowheadClassDiagram::Wowhead::WebForm1 to WowheadClassDiagram::System::Web::UI::Page (Generalization)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: WowheadClassDiagram::Wowhead::Items to WowheadClassDiagram::System::Web::UI::Page (Generalization)" />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="High" Text="(8) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-05-14T15:03:26" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

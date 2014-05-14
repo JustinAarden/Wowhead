@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89243b3c-4b06-4470-8661-e537c0a0734b}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>WowheadClassDiagram</Name>
+    <RootNamespace>WowheadClassDiagram</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="FullProject.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FullProject.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FullProject.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1502.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1502.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1209.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1502.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1503.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PresentationLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PresentationLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PresentationLayer.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="BusinessLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BusinessLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BusinessLayer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="DataAccessLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataAccessLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataAccessLayer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\WowheadClassDiagram.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
