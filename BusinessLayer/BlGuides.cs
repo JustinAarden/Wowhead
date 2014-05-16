@@ -22,6 +22,8 @@ namespace BusinessLayer
             DataAccessLayer.DalGuide dalguide = new DataAccessLayer.DalGuide();
             return dalguide.GetGuideByName(name);
         }
+
+
         
     }
 }

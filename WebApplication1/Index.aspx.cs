@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 using BusinessLayer;
+using Entities;
 
 namespace Wowhead
 {
@@ -13,10 +14,15 @@ namespace Wowhead
 
         protected void btSearch_Click(object sender, EventArgs e)
         {
+            //IdOrNameCheck idcheck = new IdOrNameCheck();
+
             var guide = new BlGuides();
             var item = new BLItem();
             if (!string.IsNullOrEmpty(txtSearch.Text))
             {
+                if (txtSearch.Text.StartsWith("Guide:"))
+                {
+                }
                 int EnteredIntValue = 0;
                 bool IsIntOrNot = false;
                 IsIntOrNot = int.TryParse(txtSearch.Text, out EnteredIntValue);
@@ -35,6 +41,24 @@ namespace Wowhead
             {
                 txtSearch.Text = "Please enter a search string";
             }
+            //if (txtSearch.Text.StartsWith("guide:"))
+            //{
+            //    IdOrNameCheck.HandleGuide(txtSearch.Text.Substring(6));
+                
+            //}
+            //else if (txtSearch.Text.StartsWith("item:"))
+            //{
+            //    //Item.Handle(txtSearch.Text.SubString(6));
+            //}
+            //else if (txtSearch.Text.StartsWith("class:"))
+            //{
+            //    //Classes.Handle(txtSearch.Text);
+            //}
+            //else
+            //{
+            //    //HandleItemZonderPrefix(txtSearch.Text);
+            //}
+
         }
     }
 }

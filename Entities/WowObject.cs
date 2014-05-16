@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Classes : WowObject
+    public class WowObject
     {
+        public string Name { get; set; }
+        public int Id { get; set; }
     }
 }

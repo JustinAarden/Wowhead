@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 
 namespace DataAccessLayer
 {
-    class DalClasses
+   public class DalClasses
     {
         public Classes GetClassById(int id)
         {

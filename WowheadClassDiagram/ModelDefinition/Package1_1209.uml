@@ -1047,6 +1047,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="1595695d-9b9f-4d4e-9bd7-131a971be15c"
+            isDerived="false"
+            sourceEndRoleName="DalGuide"
+            targetEndRoleName="BlGuides"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="024d4f6e-2406-47c7-b6eb-7880d98fc9d1"
+              LastKnownName="BlGuides"
+              LastKnownLocation="Package_1209.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="042bfdbd-bcd7-4b58-99e6-f20ce7d21b60"
+                  name="DalGuide"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd0bea4e-b6d8-4aef-bf51-952e0d9b11f9"
+                  name="BlGuides"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation
@@ -1401,6 +1440,45 @@
                 <memberEnd
                   Id="ff8af63e-7bb2-49d1-9d0f-67281ecb68cc"
                   name="Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9c0a5c8d-02e0-4bb3-bb5e-d657abb4a5ed"
+            isDerived="false"
+            sourceEndRoleName="DalItem"
+            targetEndRoleName="BLItem"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="166f63bd-8d59-4f56-957a-9b99f8748b4e"
+              LastKnownName="BLItem"
+              LastKnownLocation="Package_1209.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3acfdd96-7854-43bf-971b-c742e94a778d"
+                  name="DalItem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6328d3d-8da2-4986-9f99-b714b7afdb9c"
+                  name="BLItem"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1862,6 +1940,45 @@
                 <memberEnd
                   Id="0ad8367b-d97d-492d-98ed-cdc266276484"
                   name="Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9e5b2f60-f926-4b91-b08f-fb4476605475"
+            isDerived="false"
+            sourceEndRoleName="DalClasses"
+            targetEndRoleName="BlClass"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dff52391-4e7e-4e1b-84ab-043cfea0ca6d"
+              LastKnownName="BlClass"
+              LastKnownLocation="Package_1209.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2495741d-6e33-4d1b-9204-64d1d1ef05de"
+                  name="DalClasses"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50b2b197-1cf2-4fa0-9283-ce466df2b5b2"
+                  name="BlClass"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

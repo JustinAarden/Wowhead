@@ -153,6 +153,192 @@
         LastKnownName="Wowhead"
         LastKnownLocation="Package_1502.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="17ecae92-ff4b-4cdb-9e2c-cd7e6dfab7d7"
+        name="Item" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f8008e0e-d0d7-4e73-8858-7bc1d41b8ce3"
+        name="Item"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f24bb94a-5433-4e7c-a908-2ff8362c8eb6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="21dcfcae-0b33-46df-b7c0-559a57af45aa"
+              LastKnownName="WowObject"
+              LastKnownLocation="WowheadClassDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a2b5da7e-9186-41c8-a9ac-de86fa0391e6"
+            name="Level"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d1becc13-9ec0-44e6-b53c-ece54b9868bb"
+            name="ReqLevel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a7774cf4-c82b-419f-8b0a-2a189dc52ee4"
+            name="Quality"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="797d792c-d902-422b-a7c3-5fd4f801191c"
+        name="Guide"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="455cba09-5a73-402d-9600-eabc33911dd1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="21dcfcae-0b33-46df-b7c0-559a57af45aa"
+              LastKnownName="WowObject"
+              LastKnownLocation="WowheadClassDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a493bd07-6b48-4d8f-9387-774c08fc20f5"
+            name="Author"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4c0395ce-7cc7-4f0c-bb4f-510e282ff1e1"
+                LastKnownName="string"
+                LastKnownLocation="WowheadClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="21dcfcae-0b33-46df-b7c0-559a57af45aa"
+        name="WowObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8f76d574-3533-4428-9bca-e52cb1865bc6"
+            name="Naam"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="WowheadClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="57b36655-fc30-4bea-856c-eb59cc4a69fa"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="WowheadClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1306d857-5d95-490c-b35a-3183ec0e34e1"
+        name="Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="856a8862-cd41-44b1-a5cb-662a624c9815"
+            isSubstitutable="false">
+            <classMoniker
+              Id="21dcfcae-0b33-46df-b7c0-559a57af45aa"
+              LastKnownName="WowObject"
+              LastKnownLocation="WowheadClassDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="72021719-0dfd-4fc1-945c-3dabeec08e8e"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4c0395ce-7cc7-4f0c-bb4f-510e282ff1e1"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9799237c-caa7-4785-a6ab-a3b97c9af81f"
+        name="Int" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

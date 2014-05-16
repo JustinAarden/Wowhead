@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlClass.cs" />
     <Compile Include="BlGuides.cs" />
     <Compile Include="BlItem.cs" />
+    <Compile Include="IdOrNameCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
