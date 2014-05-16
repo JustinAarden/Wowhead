@@ -14,7 +14,8 @@ namespace DataAccessLayer
             {
                 db.OpenConnection();
 
-                db.CreateCommand("SELECT * FROM Guide WHERE Guide_ID = " + id);
+                db.CreateCommand("SELECT * FROM Class WHERE Class_ID = @id");
+                db.AddParameter("@id", id);
                 MySqlDataReader dr = db.Command.ExecuteReader();
                 while (dr.Read())
                 {
@@ -33,7 +34,7 @@ namespace DataAccessLayer
             using (var db = new Database())
             {
                 db.OpenConnection();
-                db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
+                db.CreateCommand("SELECT * FROM Class WHERE Name LIKE @name");
                 db.AddParameter("@name", "%" + name + "%"); // Part of the string
                 MySqlDataReader dr = db.Command.ExecuteReader();
 

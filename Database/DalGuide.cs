@@ -13,7 +13,8 @@ namespace DataAccessLayer
             {
                 db.OpenConnection();
 
-                db.CreateCommand("SELECT * FROM Guide WHERE Guide_ID = " + id);
+                db.CreateCommand("SELECT Guide.Name, Author.Name AS Author FROM Guide, Author WHERE Guide.Author_ID=Author.Author_ID And Guide_ID = @id");
+                db.AddParameter("@id", id);
                 MySqlDataReader dr = db.Command.ExecuteReader();
                 while (dr.Read())
                 {
