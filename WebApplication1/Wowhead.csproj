@@ -64,6 +64,7 @@
   <ItemGroup>
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\Server.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -84,6 +85,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Search.aspx" />
     <Content Include="Web.config" />
     <Content Include="Index.aspx" />
     <Content Include="Guides.aspx" />
@@ -110,6 +112,13 @@
     </Compile>
     <Compile Include="Guides.aspx.designer.cs">
       <DependentUpon>Guides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

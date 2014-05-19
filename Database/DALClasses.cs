@@ -17,6 +17,7 @@ namespace DataAccessLayer
                 db.CreateCommand("SELECT * FROM Class WHERE Class_ID = @id");
                 db.AddParameter("@id", id);
                 MySqlDataReader dr = db.Command.ExecuteReader();
+
                 while (dr.Read())
                 {
                     classes = new Classes();

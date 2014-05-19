@@ -10,3 +10,16 @@ C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\WebApplication1\bin\Database.pdb
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\WebApplication1\obj\Release\Wowhead.csprojResolveAssemblyReference.cache
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\WebApplication1\obj\Release\WebApplication1.dll
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Entities.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\mysql.data.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Database.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Entities.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Database.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Release\Wowhead.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Release\WebApplication1.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Release\WebApplication1.pdb

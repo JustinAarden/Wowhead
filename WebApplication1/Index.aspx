@@ -19,13 +19,7 @@
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+
         <style type="text/css" id="holderjs-style">
             .auto-style1 {
                 height: 121px;
@@ -33,6 +27,7 @@
             }
         </style>
     </head>
+
 
     <body>
 
@@ -69,14 +64,43 @@
                         <p class="lead">
 
                         </p>
-                        <p class="lead">
-                            <form runat="server">
-                            <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
-                            <br />
-                            <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
+                        <form runat="server">
+                            <p class="lead">
+                                <asp:CheckBox ID="cbItem" runat="server" Text="Item" onClick="javascript:item(this)" />
+                                <asp:CheckBox ID="cbGuide" runat="server" Text="Guide" onClick="javascript:guide(this)" />
+                                <asp:CheckBox ID="cbClass" runat="server" Text="Class" onClick="javascript:classes(this)"/>
+                                <script type="text/javascript">
+                                    function item(itemobject) {
+                                        if (itemobject.checked == true) {
+                                            document.getElementById("cbGuide").checked = false;
+                                            document.getElementById("cbClass").checked = false;
+                                        }
+                                    }
+                                </script>
+                                <script type="text/javascript">
+                                    function guide(guideobject) {
+                                        if (guideobject.checked == true) {
+                                            document.getElementById("cbItem").checked = false;
+                                            document.getElementById("cbClass").checked = false;
+                                        }
+                                    }
+                                </script>
+                                <script type="text/javascript">
+                                    function classes(classobject) {
+                                        if (classobject.checked == true) {
+                                            document.getElementById("cbItem").checked = false;
+                                            document.getElementById("cbGuide").checked = false;
+                                        }
+                                    }
+                                </script>
+                                
+
+                                <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
+                                <br />
+                                <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
                                                     
-                        </p>
-                    </form>
+                            </p>
+                        </form>
                     </div>
 
                     <div class="mastfoot">

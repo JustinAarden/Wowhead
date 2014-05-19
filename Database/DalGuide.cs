@@ -34,7 +34,7 @@ namespace DataAccessLayer
             using (var db = new Database())
             {
                 db.OpenConnection();
-                db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
+                db.CreateCommand("SELECT Guide.Name, Author.Name AS Author FROM Guide, Author WHERE Guide.Author_ID=Author.Author_ID And Guide.Name LIKE @name");
                 db.AddParameter("@name", "%" + name + "%"); // Part of the string
                 MySqlDataReader dr = db.Command.ExecuteReader();
 

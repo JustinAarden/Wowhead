@@ -7,3 +7,13 @@ C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\BusinessLayer\bin\Release\Entities.pdb
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\BusinessLayer\obj\Release\BusinessLayer.dll
 C:\Users\justi_000\Dropbox\HBO\C#\Wowhead\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\Database.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\Entities.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\MySql.Data.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\Database.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\bin\Release\Entities.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\BusinessLayer\obj\Release\BusinessLayer.pdb

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="WowheadDB-Web.config Connection String" description="WowheadDB Connection String used in web.config by the application to access the database." defaultValue="Database=wowhead;Server=127.0.0.1;Port=3306;UID=web;PWD=okmnbvcx1@;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\justi_000\\Dropbox\\HBO\\C\#\\Wowhead\\WebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WowheadDB']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\justi_000\\Documents\\GitHub\\Wowhead\\WebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WowheadDB']/@connectionString" />
+  </parameter>
+  <parameter name="wowheadConnectionString-Web.config Connection String" description="wowheadConnectionString Connection String used in web.config by the application to access the database." defaultValue="server=127.0.0.1;user id=web;password=okmnbvcx1@;persistsecurityinfo=True;database=wowhead" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\justi_000\\Documents\\GitHub\\Wowhead\\WebApplication1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='wowheadConnectionString']/@connectionString" />
   </parameter>
 </parameters>
