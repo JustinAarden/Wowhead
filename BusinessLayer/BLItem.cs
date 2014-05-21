@@ -22,6 +22,12 @@ namespace BusinessLayer
              DataAccessLayer.DalItem itemFactory = new DataAccessLayer.DalItem();
              return itemFactory.GetItemByName(name);
           }
+
+         public List<Entities.Item> gridviewitem(string name)
+         {
+             DataAccessLayer.DalItem itemfactory = new DataAccessLayer.DalItem();
+             return itemfactory.ItemsGridview(name);
+         }
          
     }
 }

@@ -26,16 +26,30 @@ namespace Wowhead
 
             if (cbItem.Checked == true)
             {
-                txtSearch.Text = check.HandleItem((txtSearch.Text));
+
+                //txtSearch.Text = check.HandleItem((txtSearch.Text));
+                SearchSession search = new SearchSession();
+                search.SearchText = txtSearch.Text;
+                search.checkboxItemChecked = cbItem.Checked;
+                Session["SearchParams"] = search;
+                Response.Redirect("Search.aspx");
 
             }
             else if (cbClass.Checked == true)
             {
-                txtSearch.Text = check.HandleClass((txtSearch.Text));
+                SearchSession search = new SearchSession();
+                search.SearchText = txtSearch.Text;
+                search.checkboxClassChecked = cbClass.Checked;
+                Session["SearchParams"] = search;
+                Response.Redirect("Search.aspx");
             }
             else if (cbGuide.Checked == true)
             {
-                txtSearch.Text = check.HandleGuide((txtSearch.Text));
+                SearchSession search = new SearchSession();
+                search.SearchText = txtSearch.Text;
+                search.checkboxGuideChecked = cbGuide.Checked;
+                Session["SearchParams"] = search;
+                Response.Redirect("Search.aspx");
             }
             else
             {

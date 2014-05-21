@@ -120,6 +120,7 @@
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SearchSession.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Icons\" />

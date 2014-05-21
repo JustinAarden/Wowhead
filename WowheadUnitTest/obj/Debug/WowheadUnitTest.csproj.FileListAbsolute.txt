@@ -1,0 +1,12 @@
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\WowheadUnitTest.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\WowheadUnitTest.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\BusinessLayer.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\Entities.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\Database.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\MySql.Data.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\BusinessLayer.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\Entities.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\bin\Debug\Database.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\obj\Debug\WowheadUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\obj\Debug\WowheadUnitTest.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WowheadUnitTest\obj\Debug\WowheadUnitTest.pdb

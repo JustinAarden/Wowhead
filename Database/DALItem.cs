@@ -1,4 +1,4 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
 using Entities;
 using MySql.Data.MySqlClient;
 
@@ -22,7 +22,7 @@ namespace DataAccessLayer
                     item.Level = dr["level"].ToString();
                 }
             }
-            
+
             return item;
         }
 
@@ -54,20 +54,28 @@ namespace DataAccessLayer
             return item;
         }
 
-        public Item ItemGridview(string name)
+        public List<Item> ItemsGridview(string name)
         {
+            var griditems = new List<Item>();
             Item item = null;
             using (var db = new Database())
             {
                 db.OpenConnection();
+                db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
+                db.AddParameter("@name", "%" + name + "%");
+                MySqlDataReader dr = db.Command.ExecuteReader();
 
-                db.CreateCommand("SELECT * FROM Item");
-                var datatableitems = new DataTable();
-                var da = new MySqlDataAdapter();
-                da.Fill(datatableitems);
+
+                while (dr.Read())
+                {
+                    item = new Item();
+                    item.Name = (string) dr["name"];
+                    item.Level = (string) dr["level"];
+                    griditems.Add(item);
+                }
             }
 
-            return item;
+            return griditems;
         }
     }
 }
