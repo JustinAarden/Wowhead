@@ -17,13 +17,13 @@ namespace Wowhead
             SearchSession search = (SearchSession)Session["SearchParams"];
             if (search.checkboxItemChecked)
             {
-                var gridviewitem = new List<Item>();
-                GridView1.DataSource = gridviewitem;
+                List<Entities.Item> itemList = BLItem.gridviewitem(search.SearchText);
+                GridView1.DataSource = itemList;
                 GridView1.DataBind();
             }
             else if (search.checkboxClassChecked)
             {
-                //txtSearch2.Text = check.HandleItem((search.SearchText));
+              //txtSearch2.Text = check.HandleItem((search.SearchText));
             }
 
         }

@@ -19,7 +19,7 @@ namespace DataAccessLayer
                 {
                     item = new Item();
                     item.Name = dr["name"].ToString();
-                    item.Level = dr["level"].ToString();
+                    //item.Level = dr["level"].ToString();
                 }
             }
 
@@ -47,7 +47,7 @@ namespace DataAccessLayer
                 {
                     item = new Item();
                     item.Name = dr["name"].ToString();
-                    item.Level = dr["level"].ToString();
+                    //item.Level = dr["level"].ToString();
                 }
             }
 
@@ -70,7 +70,7 @@ namespace DataAccessLayer
                 {
                     item = new Item();
                     item.Name = (string) dr["name"];
-                    item.Level = (string) dr["level"];
+                    item.Level = (int) dr["level"];
                     griditems.Add(item);
                 }
             }

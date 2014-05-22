@@ -67,20 +67,19 @@
                         <form runat="server">
                             <p class="lead">
 
-                                <asp:TextBox ID="txtSearch2" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
-                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1">
-                                    <Columns>
-                                        <asp:BoundField DataField="Level" HeaderText="Level" SortExpression="Level" />
-                                        <asp:BoundField DataField="ReqLevel" HeaderText="ReqLevel" SortExpression="ReqLevel" />
-                                        <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                                        <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
-                                    </Columns>
+                                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Width="944px">
+                                    <AlternatingRowStyle BackColor="White" />
+                                    <FooterStyle BackColor="#CCCC99" />
+                                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                                    <RowStyle BackColor="#F7F7DE" />
+                                    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                                    <SortedAscendingHeaderStyle BackColor="#848384" />
+                                    <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                                    <SortedDescendingHeaderStyle BackColor="#575357" />
                                 </asp:GridView>
-                                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="gridviewitem" TypeName="BusinessLayer.BLItem">
-                                    <SelectParameters>
-                                        <asp:Parameter Name="name" Type="String" />
-                                    </SelectParameters>
-                                </asp:ObjectDataSource>
+
                                 <br />
 
                                                     

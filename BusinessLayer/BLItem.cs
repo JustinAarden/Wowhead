@@ -23,7 +23,7 @@ namespace BusinessLayer
              return itemFactory.GetItemByName(name);
           }
 
-         public List<Entities.Item> gridviewitem(string name)
+         public static List<Entities.Item> gridviewitem(string name)
          {
              DataAccessLayer.DalItem itemfactory = new DataAccessLayer.DalItem();
              return itemfactory.ItemsGridview(name);

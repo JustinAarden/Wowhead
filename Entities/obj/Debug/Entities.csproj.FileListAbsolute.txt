@@ -6,3 +6,4 @@ C:\Users\justi_000\Documents\GitHub\Wowhead\Entities\bin\Debug\Entities.dll
 C:\Users\justi_000\Documents\GitHub\Wowhead\Entities\bin\Debug\Entities.pdb
 C:\Users\justi_000\Documents\GitHub\Wowhead\Entities\obj\Debug\Entities.dll
 C:\Users\justi_000\Documents\GitHub\Wowhead\Entities\obj\Debug\Entities.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache

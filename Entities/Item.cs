@@ -9,7 +9,7 @@ namespace Entities
 {
     public class Item : WowObject
     {
-        public string Level { get; set; }
+        public int Level { get; set; }
         public string ReqLevel { get; set; }
 
 
