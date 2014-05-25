@@ -67,8 +67,14 @@
                         <form runat="server">
                             <p class="lead">
 
-                                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Width="944px">
+                                <asp:GridView ID="GridItem" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Width="944px" Visible="False">
                                     <AlternatingRowStyle BackColor="White" />
+                                    <Columns>
+                                        <asp:BoundField DataField="Name" AccessibleHeaderText="Name" HeaderText="Name" />
+                                        <asp:BoundField AccessibleHeaderText="Level" DataField="Level" HeaderText="Level" />
+                                        <asp:BoundField AccessibleHeaderText="ReqLevel" DataField="ReqLevel" HeaderText="Requirement Level" />
+                                        <asp:BoundField AccessibleHeaderText="Quality" DataField="Quality" HeaderText="Quality" />
+                                    </Columns>
                                     <FooterStyle BackColor="#CCCC99" />
                                     <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
                                     <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
@@ -79,6 +85,46 @@
                                     <SortedDescendingCellStyle BackColor="#EAEAD3" />
                                     <SortedDescendingHeaderStyle BackColor="#575357" />
                                 </asp:GridView>
+
+                                <asp:GridView ID="GridClass" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Visible="False" Width="629px">
+                                    <AlternatingRowStyle BackColor="White" />
+                                    <Columns>
+                                        <asp:BoundField AccessibleHeaderText="Name" DataField="Name" HeaderText="Name" />
+                                        <asp:BoundField AccessibleHeaderText="Spec" DataField="Specs" HeaderText="Specialization" />
+                                    </Columns>
+                                    <FooterStyle BackColor="#CCCC99" />
+                                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                                    <RowStyle BackColor="#F7F7DE" />
+                                    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                                    <SortedAscendingHeaderStyle BackColor="#848384" />
+                                    <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                                    <SortedDescendingHeaderStyle BackColor="#575357" />
+                                </asp:GridView>
+                                <asp:GridView ID="GridGuide" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Visible="False" Width="628px">
+                                    <AlternatingRowStyle BackColor="White" />
+                                    <Columns>
+                                        <asp:BoundField AccessibleHeaderText="Name" DataField="Name" HeaderText="Name" />
+                                        <asp:BoundField AccessibleHeaderText="Author" DataField="Author" HeaderText="Author" />
+                                    </Columns>
+                                    <FooterStyle BackColor="#CCCC99" />
+                                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                                    <RowStyle BackColor="#F7F7DE" />
+                                    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                                    <SortedAscendingHeaderStyle BackColor="#848384" />
+                                    <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                                    <SortedDescendingHeaderStyle BackColor="#575357" />
+                                </asp:GridView>
+                                <asp:Label ID="lbNotFound" runat="server" CssClass="alert alert-danger" Font-Italic="True" Font-Size="Medium" Font-Underline="False" Text="NotFound text" Visible="False"></asp:Label>
+
+                                                    
+                            </p>
+                            <p class="lead">
+
+                                <asp:Button ID="btNewSearch" runat="server" CssClass="btn btn-lg btn-default" Text="New Search" />
 
                                 <br />
 

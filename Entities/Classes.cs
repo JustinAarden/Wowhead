@@ -8,5 +8,6 @@ namespace Entities
 {
     public class Classes : WowObject
     {
+        public string Specs { get; set; }
     }
 }

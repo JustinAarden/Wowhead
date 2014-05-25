@@ -12,5 +12,6 @@ namespace Wowhead
         public bool checkboxClassChecked;
        public bool checkboxGuideChecked;
 
+        public string NothingFound;
     }
 }

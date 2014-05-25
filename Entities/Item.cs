@@ -10,7 +10,8 @@ namespace Entities
     public class Item : WowObject
     {
         public int Level { get; set; }
-        public string ReqLevel { get; set; }
+        public int ReqLevel { get; set; }
+        public string Quality { get; set; }
 
 
     }

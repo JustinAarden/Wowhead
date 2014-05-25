@@ -1,4 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Wowhead.WebForm1" %>
+<%@ Import Namespace="System.Web.DynamicData" %>
+<%@ Import Namespace="System.Web.UI" %>
+<%@ Import Namespace="System.Web.UI.WebControls" %>
+<%@ Import Namespace="System.Web.UI.WebControls" %>
+<%@ Import Namespace="System.Web.UI.WebControls.Expressions" %>
+<%@ Import Namespace="System.Web.UI.WebControls.WebParts" %>
 
 <!DOCTYPE html>
 <html lang="en">

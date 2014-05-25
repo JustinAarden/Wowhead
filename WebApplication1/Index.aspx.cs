@@ -5,13 +5,15 @@ using Entities;
 
 namespace Wowhead
 {
+    using System.Web.SessionState;
+
     public partial class WebForm1 : Page
 
     {
-        private IdOrNameCheck check = new IdOrNameCheck();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
         protected void RadioButtonHandler()
@@ -26,7 +28,7 @@ namespace Wowhead
 
             if (cbItem.Checked == true)
             {
-
+              
                 //txtSearch.Text = check.HandleItem((txtSearch.Text));
                 SearchSession search = new SearchSession();
                 search.SearchText = txtSearch.Text;
@@ -51,11 +53,15 @@ namespace Wowhead
                 Session["SearchParams"] = search;
                 Response.Redirect("Search.aspx");
             }
+            else if (txtSearch.Text == "Search")
+            {
+                txtSearch.Text = "Please enter a search criteria";
+            }
             else
             {
+                
                 txtSearch.Text = "Please select an search checkbox";
             }
-
 
         }
 

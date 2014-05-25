@@ -1,23 +1,58 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BlClass.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Entities;
 
 namespace BusinessLayer
 {
-    class BlClass
+    using DataAccessLayer;
+
+    /// <summary>
+    /// The bl class.
+    /// </summary>
+    public class BlClass
     {
-        public Entities.Classes GetClassById(int id)
+        public static List<Classes> gridviewclasses(string name)
         {
-            DataAccessLayer.DalClasses dalclass = new DataAccessLayer.DalClasses();
+            var dalclass = new DalClasses();
+            return dalclass.ClassesGridview(name);
+        }
+        /// <summary>
+        /// The get class by id.
+        /// </summary>
+        /// <param name="id">
+        /// The id.
+        /// </param>
+        /// <returns>
+        /// The <see cref="Classes"/>.
+        /// </returns>
+        public Classes GetClassById(int id)
+        {
+            DalClasses dalclass = new DataAccessLayer.DalClasses();
             return dalclass.GetClassById(id);
         }
 
-        public Entities.Classes GetClassByName(string name)
+        /// <summary>
+        /// The get class by name.
+        /// </summary>
+        /// <param name="name">
+        /// The name.
+        /// </param>
+        /// <returns>
+        /// The <see cref="Classes"/>.
+        /// </returns>
+        public Classes GetClassByName(string name)
         {
-            DataAccessLayer.DalClasses dalclass = new DataAccessLayer.DalClasses();
+            DalClasses dalclass = new DataAccessLayer.DalClasses();
             return dalclass.GetClassByName(name);
         }
     }

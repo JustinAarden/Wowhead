@@ -1,5 +1,16 @@
-﻿using System.Collections.Generic;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DALItem.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+
+using System.Collections.Generic;
+using System.Data;
+
 using Entities;
+
 using MySql.Data.MySqlClient;
 
 namespace DataAccessLayer
@@ -19,6 +30,7 @@ namespace DataAccessLayer
                 {
                     item = new Item();
                     item.Name = dr["name"].ToString();
+
                     //item.Level = dr["level"].ToString();
                 }
             }
@@ -47,6 +59,7 @@ namespace DataAccessLayer
                 {
                     item = new Item();
                     item.Name = dr["name"].ToString();
+
                     //item.Level = dr["level"].ToString();
                 }
             }
@@ -61,7 +74,7 @@ namespace DataAccessLayer
             using (var db = new Database())
             {
                 db.OpenConnection();
-                db.CreateCommand("SELECT * FROM Item WHERE Name LIKE @name");
+                db.CreateCommand("SELECT Item.*, Quality.Name AS Quality FROM Item, Quality WHERE Item.Quality_ID=Quality.Quality_ID AND Item.Name LIKE @name");
                 db.AddParameter("@name", "%" + name + "%");
                 MySqlDataReader dr = db.Command.ExecuteReader();
 
@@ -71,6 +84,8 @@ namespace DataAccessLayer
                     item = new Item();
                     item.Name = (string) dr["name"];
                     item.Level = (int) dr["level"];
+                    item.ReqLevel = (int) dr["Reqlevel"];
+                    item.Quality = (string) dr["Quality"];
                     griditems.Add(item);
                 }
             }

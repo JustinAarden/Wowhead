@@ -1,33 +1,69 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLayer;
-using Entities;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BlItem.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace BusinessLayer
 {
-     public class BLItem
+    using System.Collections.Generic;
+
+    using DataAccessLayer;
+
+    using Entities;
+
+    /// <summary>
+    ///     The bl item.
+    /// </summary>
+    public class BLItem
     {
+        #region Public Methods and Operators
 
-         public Entities.Item GetItemById(int id)
-         {
-             DataAccessLayer.DalItem itemFactory = new DataAccessLayer.DalItem();
-             return itemFactory.GetItemById(id);
-         }
+        /// <summary>
+        ///     The gridviewitem.
+        /// </summary>
+        /// <param name="name">
+        ///     The name.
+        /// </param>
+        /// <returns>
+        ///     The <see cref="List" />.
+        /// </returns>
+        public static List<Item> gridviewitem(string name)
+        {
+            var itemfactory = new DalItem();
+            return itemfactory.ItemsGridview(name);
+        }
 
-         public Entities.Item GetItemByName(string name)
-         {
-             DataAccessLayer.DalItem itemFactory = new DataAccessLayer.DalItem();
-             return itemFactory.GetItemByName(name);
-          }
+        /// <summary>
+        ///     The get item by id.
+        /// </summary>
+        /// <param name="id">
+        ///     The id.
+        /// </param>
+        /// <returns>
+        ///     The <see cref="Item" />.
+        /// </returns>
+        public Item GetItemById(int id)
+        {
+            var itemFactory = new DalItem();
+            return itemFactory.GetItemById(id);
+        }
 
-         public static List<Entities.Item> gridviewitem(string name)
-         {
-             DataAccessLayer.DalItem itemfactory = new DataAccessLayer.DalItem();
-             return itemfactory.ItemsGridview(name);
-         }
-         
+        /// <summary>
+        ///     The get item by name.
+        /// </summary>
+        /// <param name="name">
+        ///     The name.
+        /// </param>
+        /// <returns>
+        ///     The <see cref="Item" />.
+        /// </returns>
+        public Item GetItemByName(string name)
+        {
+            var itemFactory = new DalItem();
+            return itemFactory.GetItemByName(name);
+        }
+
+        #endregion
     }
 }
