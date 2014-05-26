@@ -37,9 +37,7 @@ namespace Wowhead
                 }
                 else
                 {
-                    
-                    lbNotFound.Text = "No Item Found Matching Your Criteria";
-                    lbNotFound.Visible = true;
+                    Response.Redirect("Index.aspx?error=itemnotfound");
                 }
 
             }
@@ -54,8 +52,7 @@ namespace Wowhead
                 }
                 else
                 {
-                    lbNotFound.Text = "No Class Found Matching Your Criteria";
-                    lbNotFound.Visible = true;
+                    Response.Redirect("Index.aspx?error=classnotfound");
                 }
             }
             else if (search.checkboxGuideChecked)
@@ -69,14 +66,14 @@ namespace Wowhead
                 }
                 else
                 {
-                    lbNotFound.Text = "No Guide Found Matching Your Criteria";
-                    lbNotFound.Visible = true;
+                    Response.Redirect("Index.aspx?error=guidenotfound");
                 }
             }
 
         }
 
-        protected void btNewSearch_Click(object sender, EventArgs e)
+
+        protected void btNewSearch_Click1(object sender, EventArgs e)
         {
             Response.Redirect("Index.aspx");
         }

@@ -13,7 +13,18 @@ namespace Wowhead
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.Params["error"] == "itemnotfound")
+            {
+                txtSearch.Text = "No Item Found Matching Your Criteria";
+            }
+            else if (Request.Params["error"] == "classnotfound")
+            {
+                txtSearch.Text = "No Class Found Matching Your Criteria";
+            }
+            else if (Request.Params["error"] == "guidenotfound")
+            {
+                txtSearch.Text = "No Guide Found Matching Your Criteria";
+            }
         }
 
         protected void RadioButtonHandler()

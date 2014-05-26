@@ -124,7 +124,7 @@
                             </p>
                             <p class="lead">
 
-                                <asp:Button ID="btNewSearch" runat="server" CssClass="btn btn-lg btn-default" Text="New Search" />
+                                <asp:Button ID="btNewSearch" runat="server" CssClass="btn btn-lg btn-default" Text="New Search" OnClick="btNewSearch_Click1" />
 
                                 <br />
 
