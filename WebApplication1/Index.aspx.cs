@@ -1,84 +1,110 @@
-﻿using System;
-using System.Web.UI;
-using BusinessLayer;
-using Entities;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Index.aspx.cs" company="">
+//   
+// </copyright>
+// <summary>
+//   The web form 1.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 namespace Wowhead
 {
-    using System.Web.SessionState;
+    using System;
+    using System.Web.UI;
 
+    /// <summary>
+    /// The web form 1.
+    /// </summary>
     public partial class WebForm1 : Page
-
     {
+        #region Methods
 
+        /// <summary>
+        /// The page_ load.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.Params["error"] == "itemnotfound")
+            if (this.Request.Params["error"] == "itemnotfound")
             {
-                txtSearch.Text = "No Item Found Matching Your Criteria";
+                lbAlert.Visible = true;
+                this.lbAlert.Text = "No Item Found Matching Your Criteria";
             }
-            else if (Request.Params["error"] == "classnotfound")
+            else if (this.Request.Params["error"] == "classnotfound")
             {
-                txtSearch.Text = "No Class Found Matching Your Criteria";
+                lbAlert.Visible = true;
+                this.lbAlert.Text = "No Class Found Matching Your Criteria";
             }
-            else if (Request.Params["error"] == "guidenotfound")
+            else if (this.Request.Params["error"] == "guidenotfound")
             {
-                txtSearch.Text = "No Guide Found Matching Your Criteria";
+                lbAlert.Visible = true;
+                this.lbAlert.Text = "No Guide Found Matching Your Criteria";
             }
         }
 
-        protected void RadioButtonHandler()
+        /// <summary>
+        /// The radio button 1_ checked changed.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
+        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbItem.Checked == true)
-            {
-                txtSearch.Text = "item:";
-            }
         }
+
+        /// <summary>
+        /// The bt search_ click.
+        /// </summary>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         protected void btSearch_Click(object sender, EventArgs e)
         {
-
-            if (cbItem.Checked == true)
+            if (this.cbItem.Checked)
             {
-              
-                //txtSearch.Text = check.HandleItem((txtSearch.Text));
-                SearchSession search = new SearchSession();
-                search.SearchText = txtSearch.Text;
-                search.checkboxItemChecked = cbItem.Checked;
-                Session["SearchParams"] = search;
-                Response.Redirect("Search.aspx");
-
+                // txtSearch.Text = check.HandleItem((txtSearch.Text));
+                var search = new SearchSession();
+                search.SearchText = this.txtSearch.Text;
+                search.checkboxItemChecked = this.cbItem.Checked;
+                this.Session["SearchParams"] = search;
+                this.Response.Redirect("Search.aspx");
             }
-            else if (cbClass.Checked == true)
+            else if (this.cbClass.Checked)
             {
-                SearchSession search = new SearchSession();
-                search.SearchText = txtSearch.Text;
-                search.checkboxClassChecked = cbClass.Checked;
-                Session["SearchParams"] = search;
-                Response.Redirect("Search.aspx");
+                var search = new SearchSession();
+                search.SearchText = this.txtSearch.Text;
+                search.checkboxClassChecked = this.cbClass.Checked;
+                this.Session["SearchParams"] = search;
+                this.Response.Redirect("Search.aspx");
             }
-            else if (cbGuide.Checked == true)
+            else if (this.cbGuide.Checked)
             {
-                SearchSession search = new SearchSession();
-                search.SearchText = txtSearch.Text;
-                search.checkboxGuideChecked = cbGuide.Checked;
-                Session["SearchParams"] = search;
-                Response.Redirect("Search.aspx");
+                var search = new SearchSession();
+                search.SearchText = this.txtSearch.Text;
+                search.checkboxGuideChecked = this.cbGuide.Checked;
+                this.Session["SearchParams"] = search;
+                this.Response.Redirect("Search.aspx");
             }
-            else if (txtSearch.Text == "Search")
+            else if (this.txtSearch.Text == "Search")
             {
-                txtSearch.Text = "Please enter a search criteria";
+                this.txtSearch.Text = "Please enter a search criteria";
             }
             else
             {
-                
-                txtSearch.Text = "Please select an search checkbox";
+                this.txtSearch.Text = "Please select an search checkbox";
             }
-
         }
 
-        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

@@ -25,6 +25,10 @@
                 height: 121px;
                 width: 278px;
             }
+         .auto-style2 {
+                width: 174px;
+                height: 47px;
+            }
         </style>
     </head>
 
@@ -39,7 +43,8 @@
 
                     <div class="masthead clearfix">
                         <div class="inner">
-                            <h3 class="masthead-brand">WOWHEAD</h3>
+                            <h3 class="masthead-brand">
+                                <img class="auto-style2" src="Content/Images/Header.png" /></h3>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="Index.aspx">Home</a></li>
                                 <li><a href="Guides.aspx">Guides</a></li>

@@ -25,13 +25,23 @@
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
 
-
         <style type="text/css" id="holderjs-style">
             .auto-style1 {
-                height: 121px;
-                width: 278px;
+                height: 147px;
+                width: 364px;
+                margin-left: 1px;
+            }
+            .auto-style2 {
+                width: 174px;
+                height: 47px;
             }
         </style>
+        <script src="Scripts/jquery.js"></script>
+        <script src="Scripts/fancyInput.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <script src="Scripts/docs.js"></script>
+        <script src="Scripts/wowhead.js"></script>
+
     </head>
 
 
@@ -45,7 +55,8 @@
 
                     <div class="masthead clearfix">
                         <div class="inner">
-                            <h3 class="masthead-brand">WOWHEAD</h3>
+                            <h3 class="masthead-brand">
+                                <img class="auto-style2" src="Content/Images/Header.png" /></h3>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="Index.aspx">Home</a></li>
                                 <li><a href="Guides.aspx">Guides</a></li>
@@ -65,15 +76,22 @@
                     </div>
 
                     <div class="inner cover">
-                        <h1 class="cover-heading">
-                            <img alt="" class="auto-style1" src="Content/Images/transparent.png" /></h1>
+                        <form runat="server">
+                            <h1 class="cover-heading">
+                            <img alt="" class="auto-style1" src="Content/Images/transparent.png" /><br/>
+                            </h1>
+                            <p class="cover-heading">
+                            </p>
                         <p class="lead">
 
+                            <asp:Label ID="lbAlert" runat="server" class="alert alert-danger" Text="Label" Font-Size="Medium" Visible="False"></asp:Label>
+
                         </p>
-                        <form runat="server">
                             <p class="lead">
                                 <asp:CheckBox ID="cbItem" runat="server" Text="Item" onClick="javascript:item(this)" />
+                                &nbsp;&nbsp;
                                 <asp:CheckBox ID="cbGuide" runat="server" Text="Guide" onClick="javascript:guide(this)" />
+                                &nbsp;&nbsp;
                                 <asp:CheckBox ID="cbClass" runat="server" Text="Class" onClick="javascript:classes(this)"/>
                                 <script type="text/javascript">
                                     function item(itemobject) {
@@ -102,6 +120,7 @@
                                 
 
                                 <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
+			                    <div id="results"></div>
                                 <br />
                                 <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
                                                     
@@ -124,9 +143,7 @@
         <!-- Bootstrap core JavaScript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="Scripts/jquery.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
-        <script src="Scripts/docs.js"></script>
+
 
 
     </body>

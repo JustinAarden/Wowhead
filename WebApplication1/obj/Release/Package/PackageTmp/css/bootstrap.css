@@ -217,8 +217,9 @@
                                                             input, button, select, textarea {
                                                                 font-family: inherit;
                                                                 font-size: inherit;
-                                                                line-height: inherit
-                                                            }
+                                                                line-height: inherit;
+    margin-bottom: 0;
+}
 
                                                             a {
                                                                 color: #428bca;
@@ -1003,7 +1004,7 @@
 
                                                             table {
                                                                 background-color: transparent;
-                                                                margin-right: 392px;
+                                                                margin-right: 206px;
                                                                 max-width: 100%;
                                                             }
 

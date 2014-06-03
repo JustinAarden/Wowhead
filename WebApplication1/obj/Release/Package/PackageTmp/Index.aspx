@@ -1,4 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Wowhead.WebForm1" %>
+<%@ Import Namespace="System.Web.DynamicData" %>
+<%@ Import Namespace="System.Web.UI" %>
+<%@ Import Namespace="System.Web.UI.WebControls" %>
+<%@ Import Namespace="System.Web.UI.WebControls" %>
+<%@ Import Namespace="System.Web.UI.WebControls.Expressions" %>
+<%@ Import Namespace="System.Web.UI.WebControls.WebParts" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +24,18 @@
 
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
-
+        	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="fancyInput.css">
 
         <style type="text/css" id="holderjs-style">
             .auto-style1 {
-                height: 121px;
-                width: 278px;
+                height: 147px;
+                width: 364px;
+                margin-left: 1px;
+            }
+            .auto-style2 {
+                width: 174px;
+                height: 47px;
             }
         </style>
     </head>
@@ -39,7 +51,8 @@
 
                     <div class="masthead clearfix">
                         <div class="inner">
-                            <h3 class="masthead-brand">WOWHEAD</h3>
+                            <h3 class="masthead-brand">
+                                <img class="auto-style2" src="Content/Images/Header.png" /></h3>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="Index.aspx">Home</a></li>
                                 <li><a href="Guides.aspx">Guides</a></li>
@@ -59,15 +72,22 @@
                     </div>
 
                     <div class="inner cover">
-                        <h1 class="cover-heading">
-                            <img alt="" class="auto-style1" src="Content/Images/transparent.png" /></h1>
+                        <form runat="server">
+                            <h1 class="cover-heading">
+                            <img alt="" class="auto-style1" src="Content/Images/transparent.png" /><br/>
+                            </h1>
+                            <p class="cover-heading">
+                            </p>
                         <p class="lead">
 
+                            <asp:Label ID="lbAlert" runat="server" class="alert alert-danger" Text="Label" Font-Size="Medium" Visible="False"></asp:Label>
+
                         </p>
-                        <form runat="server">
                             <p class="lead">
                                 <asp:CheckBox ID="cbItem" runat="server" Text="Item" onClick="javascript:item(this)" />
+                                &nbsp;&nbsp;
                                 <asp:CheckBox ID="cbGuide" runat="server" Text="Guide" onClick="javascript:guide(this)" />
+                                &nbsp;&nbsp;
                                 <asp:CheckBox ID="cbClass" runat="server" Text="Class" onClick="javascript:classes(this)"/>
                                 <script type="text/javascript">
                                     function item(itemobject) {

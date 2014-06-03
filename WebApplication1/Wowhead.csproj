@@ -62,10 +62,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Header.png" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
+    <Content Include="LiveSearch.ashx" />
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\Server.pubxml" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -80,11 +83,15 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\cover.css" />
+    <Content Include="css\fancyInput.css" />
+    <Content Include="css\styles.css" />
     <Content Include="Items.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.js" />
+    <Content Include="Scripts\fancyInput.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\wowhead.js" />
     <Content Include="Search.aspx" />
     <Content Include="Web.config" />
     <Content Include="Index.aspx" />
@@ -97,6 +104,9 @@
     </Compile>
     <Compile Include="Items.aspx.designer.cs">
       <DependentUpon>Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSearch.ashx.cs">
+      <DependentUpon>LiveSearch.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Index.aspx.cs">
