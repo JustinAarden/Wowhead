@@ -37,7 +37,6 @@
             }
         </style>
         <script src="Scripts/jquery.js"></script>
-        <script src="Scripts/fancyInput.js"></script>
         <script src="Scripts/bootstrap.js"></script>
         <script src="Scripts/docs.js"></script>
         <script src="Scripts/wowhead.js"></script>
@@ -118,12 +117,11 @@
                                     }
                                 </script>
                                 
-
-                                <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
-			                    <div id="results"></div>
+                                <asp:TextBox type='text' ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" autocomplete="off" onFocus="this.value=''"></asp:TextBox>                
+                                    <div id="results"></div>
                                 <br />
                                 <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
-                                                    
+                                
                             </p>
                         </form>
                     </div>

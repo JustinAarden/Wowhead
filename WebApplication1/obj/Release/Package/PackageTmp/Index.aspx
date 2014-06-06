@@ -24,8 +24,6 @@
 
         <!-- Custom styles for this template -->
         <link href="css/cover.css" rel="stylesheet">
-        	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="fancyInput.css">
 
         <style type="text/css" id="holderjs-style">
             .auto-style1 {
@@ -38,6 +36,12 @@
                 height: 47px;
             }
         </style>
+        <script src="Scripts/jquery.js"></script>
+        <script src="Scripts/fancyInput.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <script src="Scripts/docs.js"></script>
+        <script src="Scripts/wowhead.js"></script>
+
     </head>
 
 
@@ -115,7 +119,8 @@
                                 </script>
                                 
 
-                                <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" onFocus="this.value=''"></asp:TextBox>
+                                <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" Text="Search" style="text-align: center" autocomplete="off" onFocus="this.value=''"></asp:TextBox>
+			                    <div id="results"></div>
                                 <br />
                                 <asp:Button ID="btSearch" runat="server" CssClass="btn btn-lg btn-default" Text="Search" OnClick="btSearch_Click"/>
                                                     
@@ -138,9 +143,7 @@
         <!-- Bootstrap core JavaScript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="Scripts/jquery.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
-        <script src="Scripts/docs.js"></script>
+
 
 
     </body>

@@ -26,34 +26,6 @@ namespace BusinessLayer
             var dalclass = new DalClasses();
             return dalclass.ClassesGridview(name);
         }
-        /// <summary>
-        /// The get class by id.
-        /// </summary>
-        /// <param name="id">
-        /// The id.
-        /// </param>
-        /// <returns>
-        /// The <see cref="Classes"/>.
-        /// </returns>
-        public Classes GetClassById(int id)
-        {
-            DalClasses dalclass = new DataAccessLayer.DalClasses();
-            return dalclass.GetClassById(id);
-        }
 
-        /// <summary>
-        /// The get class by name.
-        /// </summary>
-        /// <param name="name">
-        /// The name.
-        /// </param>
-        /// <returns>
-        /// The <see cref="Classes"/>.
-        /// </returns>
-        public Classes GetClassByName(string name)
-        {
-            DalClasses dalclass = new DataAccessLayer.DalClasses();
-            return dalclass.GetClassByName(name);
-        }
     }
 }

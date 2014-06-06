@@ -83,13 +83,10 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\cover.css" />
-    <Content Include="css\fancyInput.css" />
-    <Content Include="css\styles.css" />
     <Content Include="Items.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.js" />
-    <Content Include="Scripts\fancyInput.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\wowhead.js" />
     <Content Include="Search.aspx" />
