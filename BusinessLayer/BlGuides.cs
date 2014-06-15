@@ -17,11 +17,14 @@ namespace BusinessLayer
     /// </summary>
     public class BlGuides
     {
-        public static List<Guide> gridviewguide(string name)
+        #region Public Methods and Operators
+
+        public static List<Guide> Gridviewguide(string name)
         {
             var dalguide = new DalGuide();
             return dalguide.GuideGridview(name);
         }
 
+        #endregion
     }
 }

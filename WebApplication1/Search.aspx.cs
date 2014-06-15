@@ -4,78 +4,72 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
-using BusinessLayer;
-
-using Entities;
-
 namespace Wowhead
 {
-    using System.Security.Cryptography.X509Certificates;
+    using System;
+    using System.Collections.Generic;
+    using System.Web.UI;
 
-    public partial class Search : System.Web.UI.Page
+    using BusinessLayer;
+
+    using Entities;
+
+    public partial class Search : Page
     {
+        #region Methods
+
+        protected void BtNewSearchClick1(object sender, EventArgs e)
+        {
+            this.Response.Redirect("Index.aspx");
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            SearchSession search = (SearchSession)Session["SearchParams"];
+            var search = (SearchSession)this.Session["SearchParams"];
             if (search.checkboxItemChecked)
             {
-                List<Item> itemList = BLItem.gridviewitem(search.SearchText);
+                List<Item> itemList = BLItem.Gridviewitem(search.SearchText);
                 if (itemList.Count != 0)
                 {
-                    GridItem.DataSource = itemList;
-                    GridItem.DataBind();
-                    GridItem.Visible = true;
+                    this.GridItem.DataSource = itemList;
+                    this.GridItem.DataBind();
+                    this.GridItem.Visible = true;
                 }
                 else
                 {
-                    Response.Redirect("Index.aspx?error=itemnotfound");
+                    this.Response.Redirect("Index.aspx?error=itemnotfound");
                 }
-
             }
             else if (search.checkboxClassChecked)
             {
-                List<Classes> classlist = BlClass.gridviewclasses(search.SearchText);
+                List<Classes> classlist = BlClass.Gridviewclasses(search.SearchText);
                 if (classlist.Count != 0)
                 {
-                    GridClass.DataSource = classlist;
-                    GridClass.DataBind();
-                    GridClass.Visible = true;
+                    this.GridClass.DataSource = classlist;
+                    this.GridClass.DataBind();
+                    this.GridClass.Visible = true;
                 }
                 else
                 {
-                    Response.Redirect("Index.aspx?error=classnotfound");
+                    this.Response.Redirect("Index.aspx?error=classnotfound");
                 }
             }
             else if (search.checkboxGuideChecked)
             {
-                List<Guide> guidelist = BlGuides.gridviewguide(search.SearchText);
-                if(guidelist.Count != 0)
+                List<Guide> guidelist = BlGuides.Gridviewguide(search.SearchText);
+                if (guidelist.Count != 0)
                 {
-                    GridGuide.DataSource = guidelist;
-                    GridGuide.DataBind();
-                    GridGuide.Visible = true;
+                    this.GridGuide.DataSource = guidelist;
+                    this.GridGuide.DataBind();
+                    this.GridGuide.Visible = true;
                 }
                 else
                 {
-                    Response.Redirect("Index.aspx?error=guidenotfound");
+                    this.Response.Redirect("Index.aspx?error=guidenotfound");
                 }
             }
-
         }
 
-
-        protected void btNewSearch_Click1(object sender, EventArgs e)
-        {
-            Response.Redirect("Index.aspx");
-        }
+        #endregion
     }
 }

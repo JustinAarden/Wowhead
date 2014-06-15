@@ -17,9 +17,10 @@ namespace BusinessLayer
     /// </summary>
     public class BLItem
     {
+        #region Public Methods and Operators
 
         /// <summary>
-        ///     The gridviewitem.
+        ///     The Gridviewitem
         /// </summary>
         /// <param name="name">
         ///     The name.
@@ -27,11 +28,12 @@ namespace BusinessLayer
         /// <returns>
         ///     The <see cref="List" />.
         /// </returns>
-        public static List<Item> gridviewitem(string name)
+        public static List<Item> Gridviewitem(string name)
         {
             var itemfactory = new DalItem();
             return itemfactory.ItemsGridview(name);
         }
 
+        #endregion
     }
 }

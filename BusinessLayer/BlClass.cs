@@ -4,28 +4,27 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Entities;
-
 namespace BusinessLayer
 {
+    using System.Collections.Generic;
+
     using DataAccessLayer;
 
+    using Entities;
+
     /// <summary>
-    /// The bl class.
+    ///     The BussinessLayer: BlClass.
     /// </summary>
     public class BlClass
     {
-        public static List<Classes> gridviewclasses(string name)
+        #region Public Methods and Operators
+
+        public static List<Classes> Gridviewclasses(string name)
         {
             var dalclass = new DalClasses();
             return dalclass.ClassesGridview(name);
         }
 
+        #endregion
     }
 }

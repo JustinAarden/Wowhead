@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wowhead</RootNamespace>
-    <AssemblyName>WebApplication1</AssemblyName>
+    <AssemblyName>Wowhead</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -92,7 +92,6 @@
     <Content Include="Search.aspx" />
     <Content Include="Web.config" />
     <Content Include="Index.aspx" />
-    <Content Include="Guides.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Items.aspx.cs">
@@ -113,13 +112,6 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Guides.aspx.cs">
-      <DependentUpon>Guides.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Guides.aspx.designer.cs">
-      <DependentUpon>Guides.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,7 +119,9 @@
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SearchSession.cs" />
+    <Compile Include="SearchSession.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Icons\" />

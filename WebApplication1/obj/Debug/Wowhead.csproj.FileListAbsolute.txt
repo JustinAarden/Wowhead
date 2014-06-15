@@ -25,9 +25,6 @@ C:\Users\justi_000\Desktop\Wowhead\WebApplication1\obj\Debug\Wowhead.csprojResol
 C:\Users\justi_000\Desktop\Wowhead\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\justi_000\Desktop\Wowhead\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Debug\Wowhead.csprojResolveAssemblyReference.cache
-C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.dll.config
-C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.dll
-C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\WebApplication1.pdb
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\BusinessLayer.dll
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Entities.dll
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\mysql.data.dll
@@ -35,5 +32,8 @@ C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Database.dll
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\BusinessLayer.pdb
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Entities.pdb
 C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Database.pdb
-C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Wowhead.dll.config
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Wowhead.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\bin\Wowhead.pdb
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Debug\Wowhead.dll
+C:\Users\justi_000\Documents\GitHub\Wowhead\WebApplication1\obj\Debug\Wowhead.pdb

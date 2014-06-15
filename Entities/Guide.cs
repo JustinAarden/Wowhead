@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Guide.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Entities
 {
     public class Guide
     {
-        public string Name { get; set; }
+        #region Public Properties
+
         public string Author { get; set; }
 
+        public string Name { get; set; }
+
+        #endregion
     }
 }

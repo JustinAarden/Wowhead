@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="WowObject.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Entities
 {
     public class WowObject
     {
-       public string Name { get; set; }
+        #region Public Properties
+
         public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        #endregion
     }
 }

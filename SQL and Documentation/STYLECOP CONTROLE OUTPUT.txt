@@ -1,0 +1,114 @@
+//DATA ACCESS LAYER
+
+// ------ StyleCop 4.7 (build 4.7.49.0) started ------
+
+// Pass 1:   Database - \DALGuide.cs
+// Pass 1:   Database - \DALItem.cs
+// Pass 1:   Database - \DBConnect.cs
+// Pass 1:   Database - \Properties\AssemblyInfo.cs
+
+// ------ StyleCop completed ------
+
+// ========== Violation Count: 0 ==========
+
+
+
+//BUSSINESS LAYER
+
+// ------ StyleCop 4.7 (build 4.7.49.0) started ------
+
+// Pass 1:   BusinessLayer - \BlClass.cs
+// Pass 1:   BusinessLayer - \BlGuides.cs
+// Pass 1:   BusinessLayer - \BlItem.cs
+// Pass 1:   BusinessLayer - \Properties\AssemblyInfo.cs
+
+// ------ StyleCop completed ------
+
+// ========== Violation Count: 0 ==========
+
+
+
+//OBJECT / ENTITY LAYER
+
+// ------ StyleCop 4.7 (build 4.7.49.0) started ------
+
+// Pass 1:   Entities - \Classes.cs
+// Pass 1:   Entities - \Guide.cs
+// Pass 1:   Entities - \Item.cs
+// Pass 1:   Entities - \Properties\AssemblyInfo.cs
+// Pass 1:   Entities - \WowObject.cs
+
+// ------ StyleCop completed ------
+
+// ========== Violation Count: 0 ==========
+
+// PRESENTATION LAYER
+// ------ StyleCop 4.7 (build 4.7.49.0) started ------
+
+// Pass 1:   WebApplication1 - \Index.aspx.cs
+// Pass 1:   WebApplication1 - \Index.aspx.designer.cs
+// Pass 1:   WebApplication1 - \Items.aspx.cs
+// Pass 1:   WebApplication1 - \Items.aspx.designer.cs
+// Pass 1:   WebApplication1 - \LiveSearch.ashx.cs
+// Pass 1:   WebApplication1 - \Properties\AssemblyInfo.cs
+// Pass 1:   WebApplication1 - \Search.aspx.cs
+// Pass 1:   WebApplication1 - \Search.aspx.designer.cs
+// Pass 2:   WebApplication1 - \Index.aspx.cs
+// Pass 2:   WebApplication1 - \Index.aspx.designer.cs
+// Pass 2:   WebApplication1 - \Items.aspx.designer.cs
+// Pass 2:   WebApplication1 - \Search.aspx.cs
+// Pass 2:   WebApplication1 - \Search.aspx.designer.cs
+
+// ------ StyleCop completed ------
+
+
+
+
+
+
+
+
+
+//WHOLE SOLUTION
+
+// ------ StyleCop 4.7 (build 4.7.49.0) started ------
+
+// Pass 1:   WebApplication1 - \Index.aspx.cs
+// Pass 1:   WebApplication1 - \Index.aspx.designer.cs
+// Pass 1:   WebApplication1 - \Items.aspx.cs
+// Pass 1:   WebApplication1 - \Items.aspx.designer.cs
+// Pass 1:   WebApplication1 - \LiveSearch.ashx.cs
+// Pass 1:   WebApplication1 - \Properties\AssemblyInfo.cs
+// Pass 1:   WebApplication1 - \Search.aspx.cs
+// Pass 1:   WebApplication1 - \Search.aspx.designer.cs
+// Pass 1:   Database - \DALGuide.cs
+// Pass 1:   Database - \DALItem.cs
+// Pass 1:   Database - \DBConnect.cs
+// Pass 1:   Database - \Properties\AssemblyInfo.cs
+// Pass 1:   BusinessLayer - \BlClass.cs
+// Pass 1:   BusinessLayer - \BlGuides.cs
+// Pass 1:   BusinessLayer - \BlItem.cs
+// Pass 1:   BusinessLayer - \Properties\AssemblyInfo.cs
+// Pass 1:   Entities - \Classes.cs
+// Pass 1:   Entities - \Guide.cs
+// Pass 1:   Entities - \Item.cs
+// Pass 1:   Entities - \Properties\AssemblyInfo.cs
+// Pass 1:   Entities - \WowObject.cs
+// Pass 1:   WowheadUnitTest - \Properties\AssemblyInfo.cs
+// Pass 1:   WowheadUnitTest - \UnitTest1.cs
+// Pass 2:   WebApplication1 - \Index.aspx.cs
+// Pass 2:   WebApplication1 - \Index.aspx.designer.cs
+// Pass 2:   WebApplication1 - \Items.aspx.designer.cs
+// Pass 2:   WebApplication1 - \Search.aspx.cs
+// Pass 2:   WebApplication1 - \Search.aspx.designer.cs
+
+// ------ StyleCop completed ------
+
+// ========== Violation Count: 0 ==========
+
+
+
+
+
+
+

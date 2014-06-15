@@ -1,17 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="SearchSession.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Wowhead
 {
     public class SearchSession
     {
-        public string SearchText;
-        public bool checkboxItemChecked;
-        public bool checkboxClassChecked;
-       public bool checkboxGuideChecked;
+        #region Fields
 
         public string NothingFound;
+
+        public string SearchText;
+
+        public bool checkboxClassChecked;
+
+        public bool checkboxGuideChecked;
+
+        public bool checkboxItemChecked;
+
+        #endregion
     }
 }

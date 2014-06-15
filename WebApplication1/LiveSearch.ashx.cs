@@ -1,19 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="LiveSearch.ashx.cs" company="">
+//   
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Wowhead
 {
+    using System.Collections.Generic;
+    using System.Web;
+
     using BusinessLayer;
 
     using Entities;
 
     /// <summary>
-    /// Summary description for LiveSearch
+    ///     Summary description for LiveSearch
     /// </summary>
     public class LiveSearch : IHttpHandler
     {
+        #region Public Properties
+
+        public bool IsReusable
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        #endregion
+
+        #region Public Methods and Operators
 
         public void ProcessRequest(HttpContext context)
         {
@@ -25,45 +42,39 @@ namespace Wowhead
 
             if (cbItem == "true")
             {
-                string html = "";
+                string html = string.Empty;
 
                 // Doe database query met LIKE
-                List<Item> itemList = BLItem.gridviewitem(searchstring);
-                foreach (Item Item in itemList)
+                List<Item> itemList = BLItem.Gridviewitem(searchstring);
+                foreach (Item item in itemList)
                 {
-                    html += Item.Name + "<br>";
+                    html += item.Name + "<br>";
                 }
 
-                context.Response.Write(html); 
+                context.Response.Write(html);
             }
             else if (cbClass == "true")
             {
-                string html = "";
-                List<Classes> classList = BlClass.gridviewclasses(searchstring);
-                foreach (Classes Class in classList)
+                string html = string.Empty;
+                List<Classes> classList = BlClass.Gridviewclasses(searchstring);
+                foreach (Classes classes in classList)
                 {
-                    html += Class.Name + " - " + Class.Specs + "<br>";
+                    html += classes.Name + " - " + classes.Specs + "<br>";
                 }
-                context.Response.Write(html); 
+                context.Response.Write(html);
             }
             else if (cbGuide == "true")
             {
-                string html = "";
-                List<Guide> guideList = BlGuides.gridviewguide(searchstring);
+                string html = string.Empty;
+                List<Guide> guideList = BlGuides.Gridviewguide(searchstring);
                 foreach (Guide guide in guideList)
                 {
                     html += guide.Name + " - " + guide.Author + "<br>";
                 }
                 context.Response.Write(html);
             }
+        }
 
-        }
-        public bool IsReusable
-        {
-            get
-            {
-                return false;
-            }
-        }
+        #endregion
     }
 }

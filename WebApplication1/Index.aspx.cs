@@ -2,73 +2,30 @@
 // <copyright file="Index.aspx.cs" company="">
 //   
 // </copyright>
-// <summary>
-//   The web form 1.
-// </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 namespace Wowhead
 {
     using System;
     using System.Web.UI;
 
     /// <summary>
-    /// The web form 1.
+    ///     The web form 1.
     /// </summary>
     public partial class WebForm1 : Page
     {
         #region Methods
 
         /// <summary>
-        /// The page_ load.
+        ///     BtSearchClick.
         /// </summary>
         /// <param name="sender">
-        /// The sender.
+        ///     The sender.
         /// </param>
         /// <param name="e">
-        /// The e.
+        ///     The e.
         /// </param>
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (this.Request.Params["error"] == "itemnotfound")
-            {
-                lbAlert.Visible = true;
-                this.lbAlert.Text = "No Item Found Matching Your Criteria";
-            }
-            else if (this.Request.Params["error"] == "classnotfound")
-            {
-                lbAlert.Visible = true;
-                this.lbAlert.Text = "No Class Found Matching Your Criteria";
-            }
-            else if (this.Request.Params["error"] == "guidenotfound")
-            {
-                lbAlert.Visible = true;
-                this.lbAlert.Text = "No Guide Found Matching Your Criteria";
-            }
-        }
-
-        /// <summary>
-        /// The radio button 1_ checked changed.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        /// <summary>
-        /// The bt search_ click.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        protected void btSearch_Click(object sender, EventArgs e)
+        protected void BtSearchClick(object sender, EventArgs e)
         {
             if (this.cbItem.Checked)
             {
@@ -102,6 +59,34 @@ namespace Wowhead
             else
             {
                 this.txtSearch.Text = "Please select an search checkbox";
+            }
+        }
+
+        /// <summary>
+        ///     The page_ load.
+        /// </summary>
+        /// <param name="sender">
+        ///     The sender.
+        /// </param>
+        /// <param name="e">
+        ///     The e.
+        /// </param>
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (this.Request.Params["error"] == "itemnotfound")
+            {
+                this.lbAlert.Visible = true;
+                this.lbAlert.Text = "No Item Found Matching Your Criteria";
+            }
+            else if (this.Request.Params["error"] == "classnotfound")
+            {
+                this.lbAlert.Visible = true;
+                this.lbAlert.Text = "No Class Found Matching Your Criteria";
+            }
+            else if (this.Request.Params["error"] == "guidenotfound")
+            {
+                this.lbAlert.Visible = true;
+                this.lbAlert.Text = "No Guide Found Matching Your Criteria";
             }
         }
 
